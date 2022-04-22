@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/fengjian2705/cdn/img/mybatis/mybtis01.jpg">
 <meta property="article:published_time" content="2022-03-23T01:54:59.856Z">
-<meta property="article:modified_time" content="2022-04-22T03:25:18.907Z">
+<meta property="article:modified_time" content="2022-04-22T03:28:17.980Z">
 <meta property="article:author" content="风间">
 <meta property="article:tag" content="mybatis">
 <meta name="twitter:card" content="summary_large_image">
@@ -341,7 +341,7 @@
 <h2 id="6-mybatis-plus-的使用"><a href="#6-mybatis-plus-的使用" class="headerlink" title="6. mybatis-plus 的使用"></a>6. mybatis-plus 的使用</h2><blockquote>
 <p>MyBatis-Plus（简称 MP）是⼀个 MyBatis 的增强⼯具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提⾼效率⽽⽣</p>
 </blockquote>
-<p><strong><font color="red">提示：</strong><br>引入 mybatis-plus 后不要再次引入 mybatis 及 mybatis-spring 依赖，以免版本问题导致异常问题</p>
+<p><strong><font color="red">提示：</font></strong><br>引入 mybatis-plus 后不要再次引入 mybatis 及 mybatis-spring 依赖，以免版本问题导致异常问题</p>
 <h3 id="6-1-急速入门-SpringBoot项目"><a href="#6-1-急速入门-SpringBoot项目" class="headerlink" title="6.1 急速入门( SpringBoot项目 )"></a>6.1 急速入门( SpringBoot项目 )</h3><h4 id="6-1-1-引入依赖"><a href="#6-1-1-引入依赖" class="headerlink" title="6.1.1 引入依赖"></a>6.1.1 引入依赖</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.baomidou<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.1.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <h4 id="6-1-2-编写实体类"><a href="#6-1-2-编写实体类" class="headerlink" title="6.1.2 编写实体类"></a>6.1.2 编写实体类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Data</span><br><span class="hljs-meta">@NoArgsConstructor</span><br><span class="hljs-meta">@AllArgsConstructor</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> </span>&#123;<br>    <br>    <span class="hljs-keyword">private</span> Integer id;<br>    <span class="hljs-keyword">private</span> String username;<br>&#125;<br><br></code></pre></td></tr></table></figure>
